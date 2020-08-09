@@ -8,13 +8,42 @@
 import SwiftUI
 
 struct ContentView: View {
+    var techniques: [Technique] = []
     var body: some View {
-        Text("Hello, world!").padding()
+        NavigationView {
+            List{ ForEach(techniques) {technique in
+                    TechniqueCell(technique: technique)
+                    }
+            HStack {
+                Spacer()
+                Text("\(techniques.count) techniques")
+                    .foregroundColor(.secondary)
+                Spacer()
+            }
+            
+            }
+        .navigationTitle("Goshinjutsu")
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView(techniques: testData)
+        }
+    }
+}
+
+struct TechniqueCell: View {
+    var technique: Technique
+    var body: some View {
+        NavigationLink(destination: techniqueDetail(technique: technique))
+        {
+            VStack(alignment: .leading){
+                Text(technique.name)
+                Text(technique.category + "tecnique").font(.subheadline).foregroundColor(.secondary)
+            }
+        }
     }
 }

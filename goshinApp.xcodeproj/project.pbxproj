@@ -15,6 +15,10 @@
 		BFBBB94824B3AEB300906894 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB91D24B3AEB200906894 /* ContentView.swift */; };
 		BFBBB94924B3AEB300906894 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFBBB91E24B3AEB300906894 /* Assets.xcassets */; };
 		BFBBB94A24B3AEB300906894 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFBBB91E24B3AEB300906894 /* Assets.xcassets */; };
+		BFBBB95A24B3AF5D00906894 /* Technique.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB95924B3AF5D00906894 /* Technique.swift */; };
+		BFBBB95B24B3AF5D00906894 /* Technique.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB95924B3AF5D00906894 /* Technique.swift */; };
+		BFBBB95D24B3B69F00906894 /* techniqueDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB95C24B3B69F00906894 /* techniqueDetail.swift */; };
+		BFBBB95E24B3B69F00906894 /* techniqueDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB95C24B3B69F00906894 /* techniqueDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,8 @@
 		BFBBB93E24B3AEB300906894 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFBBB94224B3AEB300906894 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		BFBBB94424B3AEB300906894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFBBB95924B3AF5D00906894 /* Technique.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Technique.swift; sourceTree = "<group>"; };
+		BFBBB95C24B3B69F00906894 /* techniqueDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = techniqueDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,8 @@
 			children = (
 				BFBBB91C24B3AEB200906894 /* goshinAppApp.swift */,
 				BFBBB91D24B3AEB200906894 /* ContentView.swift */,
+				BFBBB95C24B3B69F00906894 /* techniqueDetail.swift */,
+				BFBBB95924B3AF5D00906894 /* Technique.swift */,
 				BFBBB91E24B3AEB300906894 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -308,6 +316,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFBBB95A24B3AF5D00906894 /* Technique.swift in Sources */,
+				BFBBB95D24B3B69F00906894 /* techniqueDetail.swift in Sources */,
 				BFBBB94724B3AEB300906894 /* ContentView.swift in Sources */,
 				BFBBB94524B3AEB300906894 /* goshinAppApp.swift in Sources */,
 			);
@@ -317,6 +327,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFBBB95B24B3AF5D00906894 /* Technique.swift in Sources */,
+				BFBBB95E24B3B69F00906894 /* techniqueDetail.swift in Sources */,
 				BFBBB94824B3AEB300906894 /* ContentView.swift in Sources */,
 				BFBBB94624B3AEB300906894 /* goshinAppApp.swift in Sources */,
 			);
