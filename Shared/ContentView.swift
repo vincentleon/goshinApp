@@ -40,10 +40,12 @@ struct TechniqueCell: View {
     var body: some View {
         NavigationLink(destination: techniqueDetail(technique: technique))
         {
+            
             VStack(alignment: .leading){
                 Text(technique.name)
-                Text(technique.category + "tecnique").font(.subheadline).foregroundColor(.secondary)
-            }
+                Text(technique.translation).font(.subheadline).foregroundColor(.secondary).italic()
+            }.listStyle(GroupedListStyle())
         }
     }
 }
+
